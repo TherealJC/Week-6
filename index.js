@@ -55,3 +55,43 @@ function foof(x,y = 1) {
 }
 
 foof(1,3)
+
+
+////
+// function foo (... args) {
+//     console.log(args[3])
+// }
+
+// var arr = [1, 2, 3, 4, 5]
+
+// foo(... arr)
+
+function foo (x,y,z, ...args) {
+    console.log(x,y,z, args)
+}
+//If you add a 4 below, it will be added to the array
+foo(1 , 2, 3, 4, 5, 6, 7)
+
+//////
+function asd(...args) {
+    console.log(args[5])
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7]
+
+asd(...arr)
+
+
+////
+// let arr1 = [1,2,3]
+// let arr2 = [arr1,4,5,6]
+let arr1 = [1,2,3]
+let arr2 = [...arr1,4,5,6]
+console.log(arr2)
+//
+function gg(...args) {
+    console.log(args[5])
+}
+gg (1, 3, 5, 4, 66, 77, 88)
+
+//
